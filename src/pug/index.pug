@@ -1,0 +1,228 @@
+doctype html
+html(lang="ru")
+	head
+		include modules/head.pug
+	body
+		.content
+			include modules/header.pug
+
+			main
+				section.header
+					.container
+						.logo
+							img(src="images/logo.svg" alt="")
+					.container
+						.header__hero
+							h1 Подарите детям здоровье
+							p вместо корпоративных сувениров
+							.header__btns
+								button.active
+									img(src="images/svg/btn-red.svg" alt="")
+								button
+									img(src="images/svg/btn-more.svg" alt="")
+
+				section.stock
+					.container
+						h2 Акция <br> «Благотворительность вместо <i class="br"></i> сувениров»
+						p.subtitle социальная инициатива компаний, перечисляющих поздравительный бюджет полностью или частично на лечение подопечных фонда.
+						ul.stock__list
+							li.item
+								span 12 лет
+									i
+								p акция проводится с 2008 года
+							li.item
+								span 250 млн
+									i
+								p собрано для лечения детей и молодых взрослых с онкологическими и гематологическими заболеваниями
+							li.item
+								span > 550
+									i
+								p компаний присоединилось  к акции с 2008 по 2019 годы
+
+				section.description
+					.container
+						ul
+							li.content
+								h2 ЗАЧЕМ ПРИНИМАТЬ УЧАСТИЕ
+								p Возможность подарить ребенку здоровье — величайшая ценность в тех условиях, когда ресурс системы здравоохранения во многом ограничен. Примите решение о направлении корпоративного сувенирного бюджета или его части на благотворительные цели – и вы поможете детям победить болезнь. В знак благодарности мы передадим вам новогодние открытки с рисунками подопечных фонда. В этих открытках будет рассказано о том, что ваш сувенирный бюджет был направлен на благотворительность.
+							li.picture
+								img(src="images/svg/image1.svg" alt="")
+
+						ul
+							li.picture
+								img(src="images/svg/image2.svg" alt="")
+							li.content
+								h2 НА ЧТО БУДЕТ НАПРАВЛЕНО ВАШЕ ПОЖЕРТВОВАНИЕ
+								p В этом году ваши благотворительные пожертвования будут направлены на развитие системной помощи детям в проекте «Диагностика и анализы». Очень важно, чтобы врачи использовали самое совершенное оборудование, самые современные методики и самые лучшие лабораторные реактивы – ведь от этого зависит жизнь ребенка с онкологическим заболеванием.
+
+				section.why
+					.container
+						h2.main-title <span>ПОЧЕМУ</span> ИМЕННО ФОНД «ПОДАРИ ЖИЗНЬ»?
+						.why__wrapper.why-slick
+							ul.item
+								li.picture
+									img(src="images/image4.png" alt="")
+								li.content
+									h3 МЫ ПОМОГАЕМ
+									p Фонд помогает детям и молодым взрослым с онкологическими и гематологическими заболеваниями с 2006 года и имеет большой опыт.
+							ul.item
+								li.picture
+									img(src="images/image3.png" alt="")
+								li.content
+									h3 МЫ – ПРОФИ
+									p Фонд проводит акцию уже 12 лет: мы поможем вам разобраться во всех тонкостях и оформить необходимые документы.
+							ul.item
+								li.picture
+									img(src="images/image1.png" alt="")
+								li.content
+									h3 МЫ РАБОТАЕМ ПО ВСЕЙ СТРАНЕ 
+									p Подопечные фонда получают помощь и в столице, и в регионах. Также мы проводим программы обучения врачей по всей России.
+							ul.item
+								li.picture
+									img(src="images/image2.png" alt="")
+								li.content
+									h3 МЫ ОТКРЫТЫ 
+									p У фонда безупречная репутация, наша аудитория в соцсетях ежемесячно увеличивается и сейчас составляет 232000 подписчиков, амбассадоры и друзья фонда – публичные личности. Отчеты о проведении акции всегда доступны на сайте.
+
+				section.postcards
+					.container
+						h2.main-title Поздравительные <span>открытки</span>
+						p.subtitle Вы можете либо забрать у нас готовые открытки, либо самостоятельно выбрать понравившийся рисунок  и подобрать подходящий дизайн-макет на онлайн-платформе акции.
+					.postcards__list
+						section.b-marquee-line
+							.b-marquee-line__flow
+								.b-marquee-line__flow-in
+									span.b-marquee-line__flow-block
+										img.b-marquee-line__flow-item(src='images/carts/image1.jpg' alt='' border='0')
+										img.b-marquee-line__flow-item(src='images/carts/image2.jpg' alt='' border='0')
+										img.b-marquee-line__flow-item(src='images/carts/image3.jpg' alt='' border='0')
+										img.b-marquee-line__flow-item(src='images/carts/image4.jpg' alt='' border='0')
+									span.b-marquee-line__flow-block
+										img.b-marquee-line__flow-item(src='images/carts/image1.jpg' alt='' border='0')
+										img.b-marquee-line__flow-item(src='images/carts/image2.jpg' alt='' border='0')
+										img.b-marquee-line__flow-item(src='images/carts/image3.jpg' alt='' border='0')
+										img.b-marquee-line__flow-item(src='images/carts/image4.jpg' alt='' border='0')
+									span.b-marquee-line__flow-block
+										img.b-marquee-line__flow-item(src='images/carts/image1.jpg' alt='' border='0')
+										img.b-marquee-line__flow-item(src='images/carts/image2.jpg' alt='' border='0')
+										img.b-marquee-line__flow-item(src='images/carts/image3.jpg' alt='' border='0')
+										img.b-marquee-line__flow-item(src='images/carts/image4.jpg' alt='' border='0')
+
+						button.active
+							img(src="images/svg/btn-design.svg" alt="")
+
+				section.get
+					.container
+						h2.main-title ЧТО ВЫ ПОЛУЧИТЕ?
+						ul.get__list.get-slick
+							li.item
+								.picture
+									img(src="images/svg/get/image1.svg" alt="")
+								h3 ПОВЫШЕНИЕ ЛОЯЛЬНОСТИ СОТРУДНИКОВ
+								p Участие в благотворительности повышает значимость работы в вашей компании и приверженность корпоративным ценностям.
+							li.item
+								.picture.star
+									img(src="images/svg/get/image2.svg" alt="")
+								h3 ПОВЫШЕНИЕ КАПИТАЛИЗАЦИИ ВАШЕГО БРЕНДА 
+								p Ваши деловые партнеры оценят инвестиции в КСО и социально ориентированные проекты.
+							li.item
+								.picture
+									img(src="images/svg/get/image3.svg" alt="")
+								h3 ЧУВСТВО СОПРИЧАСТНОСТИ К СПАСЕНИЮ ДЕТЕЙ 
+								p Даже самый продуманный корпоративный подарок не сравнится с возможностью подарить ребенку здоровье.
+							li.item
+								.picture
+									img(src="images/svg/get/image4.svg" alt="")
+								h3 ПОВЫШЕНИЕ УРОВНЯ СОЦИАЛЬНОЙ ОТВЕТСТВЕННОСТИ В РЕГИОНАХ 
+								p В рамках акции возможна адресная помощь детям из регионов присутствия компании.
+
+						h3 + Поздравительные открытки для сотрудников и партнеров
+						.picture-corporation
+							img(src="images/svg/cart-corporation.svg" alt="")
+
+				section.reviews
+					.container
+						h2.main-title 
+							<span>ОТЗЫВЫ</span> УЧАСТНИКОВ АКЦИИ
+						ul.reviews__list.reviews-slick
+							li.item
+								.picture
+									img(src="images/reviews/image1.jpg" alt="")
+								.text.hide
+									p Красивый жест в канун Нового года дарить друг другу подарки или милые сувениры родился из чудесной рождественской традиции совершать искренние и добрые поступки. Наши сотрудники и партнеры с большой радостью откликнулись на предложение поддержать фонд «Подари жизнь» Красивый жест в канун Нового года дарить друг другу подарки или милые сувениры родился из чудесной рождественской традиции совершать искренние и добрые поступки. Наши сотрудники и партнеры с большой радостью откликнулись на предложение поддержать фонд «Подари жизнь»
+								a(href="").text-toggle показать полностью
+							li.item
+								.picture
+									img(src="images/reviews/image2.jpg" alt="")
+								.text.hide
+									p Для мурманских портовиков участие в данной акции является возможностью сделать чудо и подарить в новогоднюю пору шанс на выздоровление тому, кто в этом так нуждается. АО «ММТП» - социально ориентированное предприятие. Акция «Благотворительность вместо Для мурманских портовиков участие в данной акции является возможностью сделать чудо и подарить в новогоднюю пору шанс на выздоровление тому, кто в этом так нуждается. АО «ММТП» - социально ориентированное предприятие. Акция «Благотворительность вместо 
+								a(href="").text-toggle показать полностью
+							li.item
+								.picture
+									img(src="images/reviews/image3.jpg" alt="")
+								.text.hide
+									p Philips много лет участвует в акции. Мы верим, что всегда можно изменить жизнь к лучшему и с каждым годом гордимся тем, что вместе с «Подари жизнь», это становится реальным. Каждый может внести свой вклад и делать добрые дела. Чем больше компаний будут принимать участие, тем больше улыбок Philips много лет участвует в акции. Мы верим, что всегда можно изменить жизнь к лучшему и с каждым годом гордимся тем, что вместе с «Подари жизнь», это становится реальным. Каждый может внести свой вклад и делать добрые дела. Чем больше компаний будут принимать участие, тем больше улыбок
+								a(href="").text-toggle показать полностью
+
+				section.join
+					.container
+						h2.main-title ПРИСОЕДИНЯЙТЕСЬ К АКЦИИ Благотворительность вместо сувениров с фондом «Подари жизнь»
+					.postcards__list
+						section.b-marquee-line
+							.b-marquee-line__flow
+								.b-marquee-line__flow-in
+									span.b-marquee-line__flow-block
+										img.b-marquee-line__flow-item(src='images/join/image1.jpg' alt='' border='0')
+										img.b-marquee-line__flow-item(src='images/join/image2.jpg' alt='' border='0')
+										img.b-marquee-line__flow-item(src='images/join/image3.jpg' alt='' border='0')
+										img.b-marquee-line__flow-item(src='images/join/image4.jpg' alt='' border='0')
+										img.b-marquee-line__flow-item(src='images/join/image5.jpg' alt='' border='0')
+										img.b-marquee-line__flow-item(src='images/join/image6.jpg' alt='' border='0')
+									span.b-marquee-line__flow-block
+										img.b-marquee-line__flow-item(src='images/join/image1.jpg' alt='' border='0')
+										img.b-marquee-line__flow-item(src='images/join/image2.jpg' alt='' border='0')
+										img.b-marquee-line__flow-item(src='images/join/image3.jpg' alt='' border='0')
+										img.b-marquee-line__flow-item(src='images/join/image4.jpg' alt='' border='0')
+										img.b-marquee-line__flow-item(src='images/join/image5.jpg' alt='' border='0')
+										img.b-marquee-line__flow-item(src='images/join/image6.jpg' alt='' border='0')
+									span.b-marquee-line__flow-block
+										img.b-marquee-line__flow-item(src='images/join/image1.jpg' alt='' border='0')
+										img.b-marquee-line__flow-item(src='images/join/image2.jpg' alt='' border='0')
+										img.b-marquee-line__flow-item(src='images/join/image3.jpg' alt='' border='0')
+										img.b-marquee-line__flow-item(src='images/join/image4.jpg' alt='' border='0')
+										img.b-marquee-line__flow-item(src='images/join/image5.jpg' alt='' border='0')
+										img.b-marquee-line__flow-item(src='images/join/image6.jpg' alt='' border='0')
+
+					.container
+						p Мы рады каждому участнику и готовы предложить наиболее подходящий вариант для вашей компании,  помочь заключить договор благотворительного пожертвования и разобраться со всеми формальностями.
+						.join__btns
+							.row
+								a(href="" download)
+									img(src="images/svg/btn-download2.svg" alt="")
+
+								a(href="" download)
+									img(src="images/svg/btn-download.svg" alt="")
+
+							.row
+								button.active
+									img(src="images/svg/btn-red.svg" alt="")
+
+				section.footer
+					.container
+						.footer__top
+							ul
+								li
+									a(href="tel:88002505222") 8-800-250-5222 <i class="br"></i> (звонок из регионов бесплатный)
+								li
+									a(href="mailto: info@podari-zhizn.ru") info@podari-zhizn.ru
+							ul
+								li 119048, г. Москва,
+								li ул. Доватора, д. 13, подъезд 2А
+
+						.footer__bottom
+							p  Благотворительный фонд помощи детям и молодым взрослым с онкогематологическими и иными тяжелыми заболеваниями «Подари жизнь». Учрежден 26 ноября 2006 года Диной Корзун и Чулпан Хаматовой.
+
+
+		include modules/footer.pug
+		//- include modules/menu-mobile.pug
+		include modules/script.pug

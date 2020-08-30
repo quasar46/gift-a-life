@@ -1,0 +1,99 @@
+.why {
+    margin-bottom: 150px;
+    h2.main-title {
+        position: relative;
+        margin-bottom: 55px;
+        span {
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: -10px;
+                left: -10px;
+                background-image: url("../images/svg/underline-title.svg");
+                width: 186px;
+                height: 12px;
+                background-repeat: no-repeat;
+                @media (max-width: 768px) {
+                    width: 99px;
+                    height: 6px;
+                    bottom: -5px;
+                    left: 0;
+                }
+            }
+        }
+        @media (max-width: 768px) {
+            margin-bottom: 25px;
+        }
+    }
+    @media (max-width: 768px) {
+        margin-bottom: 90px;
+    }
+}
+
+.why__wrapper {
+    ul.item {
+        display: flex;
+        align-items: center;
+        max-width: 655px;
+        margin-bottom: 20px;
+        li.picture {
+            flex: 1 0 220px;
+            max-width: 220px;
+            margin-right: 35px;
+            @media (max-width: 768px) {
+                flex: auto;
+                width: 100%;
+                margin-right: 0;
+                margin: auto;
+                margin-bottom: 20px;
+            }
+        }
+        li.content {
+            h3 {
+                font-family: $font-title;
+                font-size: 24px;
+                color: $color-red;
+                font-weight: 400;
+                @media (max-width: 768px) {
+                    text-align: center;
+                    font-size: 19px;
+                }
+            }
+            p {
+                font-size: 18px;
+                @media (max-width: 768px) {
+                    text-align: center;
+                    font-size: 16px;
+                }
+            }
+        }
+        &:nth-child(even) {
+            margin-left: auto;
+            text-align: right;
+        }
+        @media (max-width: 768px) {
+            flex-direction: column;
+            max-width: 100%;
+        }
+    }
+    .slick-dots {
+        button {
+            font-size: 0;
+        }
+        & > li.slick-active button:before {
+            width: 8px;
+            height: 8px;
+            background-color: $color-red;
+            border-radius: 50%;
+            font-size: 0;
+        }
+        & > li button:before {
+            width: 8px;
+            height: 8px;
+            background-color: #bdbdbd;
+            border-radius: 50%;
+            font-size: 0;
+        }
+    }
+}
